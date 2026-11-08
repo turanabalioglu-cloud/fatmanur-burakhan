@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fatma Nur &amp; Burak Han · Nişan Davetiyesi">
+<meta property="og:description" content="28 Kasım 2026 Cumartesi, saat 20.00 · RAINA Davet Düğün Salonu. Davetiyeyi açmak için dokunun.">
+<meta property="og:image" content="https://turanabalioglu-cloud.github.io/fatmanur-burakhan/onizleme.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://turanabalioglu-cloud.github.io/fatmanur-burakhan/">
+<meta name="twitter:card" content="summary_large_image">
+<style>body{margin:0}[hidden]{display:none!important}img{max-width:100%}</style>
+<title>Fatma Nur & Burak Han</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Fatma Nur & Burak Han nişan davetiyesi · 28 Kasım 2026 · RAINA Davet Düğün Salonu">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Pinyon+Script&display=swap">
+<style>
+/* Layout: a gate of two embossed cream doors sealed with khaki wax; opening reveals one narrow, centred letterpress column. Single deliberate light look. */
+:root{
+  --krem:#F2EADA;       /* paper */
+  --krem-2:#E6DBC2;     /* door shade / raised ornament */
+  --haki:#6F6B45;       /* khaki accent: seal, script */
+  --haki-deep:#4B482D;  /* text */
+  --haki-soft:#9C9772;  /* hairlines, labels */
+  --altin:#B39C68;      /* faint gilding */
+  --f-script:"Pinyon Script","Snell Roundhand","Apple Chancery",cursive;
+  --f-serif:"Cormorant Garamond","Cormorant",Garamond,"Times New Roman",serif;
+  color-scheme:light;
+}
+html,body{height:100%}
+body{background:var(--krem);color:var(--haki-deep);font-family:var(--f-serif);font-size:19px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+/* ---------- gate ---------- */
+.gate{position:fixed;inset:0;z-index:30;display:flex;perspective:2200px;cursor:pointer}
+.door{position:relative;width:50%;height:100%;overflow:hidden;
+  background:
+    radial-gradient(120% 70% at 50% 45%, rgba(255,251,240,.55), rgba(255,251,240,0) 70%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .42 0 0 0 0 .3 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E"),
+    linear-gradient(180deg,#F1E8D5,#EADFC7);
+  transition:transform 1.7s cubic-bezier(.62,.04,.22,1) .35s, filter 1.7s ease .35s;
+  backface-visibility:hidden}
+.door-l{transform-origin:left center;box-shadow:inset -10px 0 18px -14px rgba(75,72,45,.35)}
+.door-r{transform-origin:right center;box-shadow:inset 10px 0 18px -14px rgba(75,72,45,.35)}
+/* recessed panel + centre rails, as on a carved double door */
+.door::before{content:"";position:absolute;inset:max(14px,2.4vmin);border:1px solid rgba(156,151,114,.35);
+  box-shadow:inset 1px 1px 0 rgba(255,252,244,.8), 1px 1px 0 rgba(255,252,244,.8)}
+.door-l::before{right:10px}
+.door-r::before{left:10px}
+.door::after{content:"";position:absolute;top:0;bottom:0;width:7px;
+  background:linear-gradient(90deg,rgba(156,151,114,.45) 0 1px,rgba(255,252,244,.9) 1px 2px,transparent 2px 5px,rgba(156,151,114,.4) 5px 6px,rgba(255,252,244,.8) 6px 7px)}
+.door-l::after{right:0}
+.door-r::after{left:0;transform:scaleX(-1)}
+.spray{position:absolute;width:min(78%,330px);height:auto;pointer-events:none}
+.spray use,.spray g{filter:url(#emb)}
+.door-l .s-top{top:0;left:0;transform:scaleY(-1)}
+.door-l .s-bot{bottom:0;left:0}
+.door-r .s-top{top:0;right:0;transform:scale(-1,-1)}
+.door-r .s-bot{bottom:0;right:0;transform:scaleX(-1)}
+.door .s-mid{width:min(46%,170px);top:50%;transform:translateY(-50%)}
+.door-l .s-mid{right:22px;transform:translateY(-50%) scaleX(-1) rotate(-8deg)}
+.door-r .s-mid{left:22px;transform:translateY(-50%) rotate(-8deg)}
+
+.wreath{position:absolute;left:50%;top:50%;z-index:2;width:300px;height:340px;transform:translate(-50%,-50%);pointer-events:none;transition:transform .7s ease,opacity .6s ease}
+.wreath g{filter:url(#emb)}
+.gate.open .wreath{transform:translate(-50%,-50%) scale(.6);opacity:0}
+.seal{position:absolute;left:50%;top:50%;z-index:3;width:96px;height:122px;border-radius:50%;border:0;padding:0;cursor:pointer;
+  transform:translate(-50%,-50%);
+  background:radial-gradient(60% 55% at 38% 32%,#8E8A60,var(--haki) 55%,#57532F);
+  box-shadow:0 0 0 5px rgba(111,107,69,.18),0 6px 14px rgba(60,57,34,.35),inset 0 2px 3px rgba(255,255,240,.25),inset 0 -3px 6px rgba(40,38,20,.35);
+  display:grid;place-items:center;transition:transform .6s ease,opacity .5s ease}
+.seal::before{content:"";position:absolute;inset:8px;border-radius:50%;border:1px solid rgba(242,234,218,.45)}
+.seal::after{content:"";position:absolute;inset:3px;border-radius:50%;border:1px solid rgba(214,196,140,.55)}
+.seal span{font-family:var(--f-script);font-size:38px;line-height:1;color:var(--krem);text-shadow:0 1px 1px rgba(40,38,20,.4);margin-top:6px}
+.seal:focus-visible,.open-btn:focus-visible,.music:focus-visible{outline:2px solid var(--haki);outline-offset:4px}
+
+.open-btn{position:absolute;left:50%;bottom:calc(9vh + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:2;
+  font:500 13px/1 var(--f-serif);letter-spacing:.32em;text-transform:uppercase;color:var(--haki-deep);
+  background:rgba(242,234,218,.72);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);
+  border:1px solid rgba(111,107,69,.45);padding:14px 22px 14px 26px;cursor:pointer;white-space:nowrap;
+  animation:breathe 2.8s ease-in-out infinite;transition:opacity .4s ease}
+.gate-top{position:absolute;left:50%;top:calc(8vh + env(safe-area-inset-top,0px));transform:translateX(-50%);z-index:2;
+  text-align:center;font:500 12px/1.6 var(--f-serif);letter-spacing:.34em;text-transform:uppercase;color:var(--haki-soft);
+  background:linear-gradient(90deg,transparent,#EFE6D2 18%,#EFE6D2 82%,transparent);padding:6px 28px;white-space:nowrap;transition:opacity .4s ease}
+@keyframes breathe{0%,100%{box-shadow:0 0 0 0 rgba(111,107,69,.25)}50%{box-shadow:0 0 0 8px rgba(111,107,69,0)}}
+
+.gate.open{cursor:default}
+.gate.open .seal{transform:translate(-50%,-50%) scale(.4);opacity:0}
+.gate.open .open-btn,.gate.open .gate-top{opacity:0}
+.gate.open .door-l{transform:rotateY(-104deg);filter:brightness(.92)}
+.gate.open .door-r{transform:rotateY(104deg);filter:brightness(.92)}
+.gate.gone{visibility:hidden;pointer-events:none}
+
+/* ---------- invitation ---------- */
+body.locked{overflow:hidden}
+.inv{position:relative;max-width:540px;margin:0 auto;text-align:center;
+  padding-left:max(22px,env(safe-area-inset-left,0px));padding-right:max(22px,env(safe-area-inset-right,0px));padding-block:56px 110px;
+  display:flex;flex-direction:column;gap:64px;font-variant-numeric:lining-nums}
+.reveal{opacity:1;transform:none;transition:opacity 1.2s ease,transform 1.2s ease}
+body.pre .reveal{opacity:0;transform:translateY(14px)}
+body.pre .reveal:nth-child(2){transition-delay:.15s}
+
+.eyebrow{font-size:13px;font-weight:500;letter-spacing:.34em;text-transform:uppercase;color:var(--haki-soft);margin:0}
+.sprig{display:block;margin:0 auto;width:150px;height:auto}
+.hero{display:flex;flex-direction:column;align-items:center;gap:18px;padding-top:12px}
+.names{margin:6px 0 0;font-family:var(--f-script);font-weight:400;color:var(--haki);line-height:.95;font-size:clamp(58px,15.5vw,88px);display:flex;flex-direction:column;align-items:center}
+.names .amp{font-size:.55em;color:var(--altin);margin:.08em 0 .02em}
+.lead{max-width:30ch;margin:6px auto 0;font-size:20px;font-style:italic;color:var(--haki-deep);text-wrap:balance}
+
+.photo{margin:0;display:flex;flex-direction:column;align-items:center;gap:16px}
+.arch-frame{width:min(100%,340px);padding:9px;border:1px solid rgba(111,107,69,.55);
+  border-radius:50% 50% 6px 6px / 36% 36% 6px 6px;background:rgba(255,251,240,.5)}
+.arch{aspect-ratio:3/4;overflow:hidden;border-radius:50% 50% 3px 3px / 37% 37% 3px 3px;box-shadow:0 10px 30px -14px rgba(60,57,34,.45)}
+.arch img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 62%;filter:saturate(.88) sepia(.06)}
+.photo figcaption{font-family:var(--f-script);font-size:40px;line-height:1;color:var(--haki);margin-top:4px}
+
+.date{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px}
+.date .side{border-block:1px solid var(--haki-soft);padding-block:8px;font-size:14px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--haki-deep)}
+.date .day{font-size:76px;line-height:1;font-weight:500;color:var(--haki)}
+.date-sub{margin:-46px 0 0;font-size:15px;letter-spacing:.3em;text-transform:uppercase;color:var(--haki-soft)}
+
+.count{display:flex;flex-direction:column;gap:18px}
+.count .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.cell{border:1px solid rgba(156,151,114,.5);padding:14px 4px 10px;background:rgba(255,251,240,.45)}
+.cell b{display:block;font-size:34px;font-weight:500;line-height:1;color:var(--haki);font-variant-numeric:tabular-nums lining-nums}
+.cell small{display:block;margin-top:6px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--haki-soft)}
+
+.venue{display:flex;flex-direction:column;align-items:center;gap:12px}
+.venue h2{margin:0;font-weight:500;font-size:28px;line-height:1.2;letter-spacing:.04em;color:var(--haki-deep);text-wrap:balance}
+.venue p{margin:0;font-style:italic;color:var(--haki-deep)}
+.btn{display:inline-flex;align-items:center;gap:10px;margin-top:8px;padding:13px 22px;text-decoration:none;
+  font:500 13px/1 var(--f-serif);letter-spacing:.26em;text-transform:uppercase;color:var(--krem);background:var(--haki);border:1px solid var(--haki);transition:background .25s}
+.btn:hover{background:var(--haki-deep)}
+.btn:focus-visible{outline:2px solid var(--haki);outline-offset:4px}
+.btn svg{width:15px;height:15px}
+
+.family{display:flex;flex-direction:column;align-items:center;gap:10px}
+.family .fam{font-size:26px;font-weight:500;color:var(--haki)}
+.family .note{margin:0;font-style:italic;max-width:32ch}
+.end{font-family:var(--f-script);font-size:44px;color:var(--haki);margin:0}
+
+.corner{position:absolute;top:0;width:170px;opacity:.55;pointer-events:none}
+.corner.l{left:-30px;transform:scaleY(-1)}
+.corner.r{right:-30px;transform:scale(-1,-1)}
+.corner use{filter:url(#emb)}
+
+.music{position:fixed;z-index:25;right:calc(24px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));
+  width:48px;height:48px;border-radius:50%;border:1px solid rgba(111,107,69,.5);background:rgba(242,234,218,.85);color:var(--haki);
+  display:grid;place-items:center;cursor:pointer;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+.music svg{width:20px;height:20px}
+.music[aria-pressed="true"]{animation:spin 6s linear infinite}
+.music .off{display:none}
+.music[aria-pressed="false"] .on{display:none}
+.music[aria-pressed="false"] .off{display:block}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+@media (min-width:700px){.inv{padding-block:84px 130px}}
+@media (prefers-reduced-motion:reduce){
+  .door,.seal,.reveal{transition-duration:.01s!important;transition-delay:0s!important}
+  .open-btn,.music{animation:none!important}
+}
+</style>
+</head>
+<body>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <filter id="emb" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="-1" dy="-1.2" stdDeviation=".5" flood-color="#FFFBF1" flood-opacity=".95"/>
+      <feDropShadow dx="1.3" dy="1.6" stdDeviation=".9" flood-color="#7E7550" flood-opacity=".42"/>
+    </filter>
+    <g id="sprayArt"></g>
+    <g id="sprigArt"></g>
+  </defs>
+</svg>
+
+<div class="gate" id="gate" role="dialog" aria-label="Davetiye kapağı">
+  <div class="door door-l">
+    <svg class="spray s-top" viewBox="0 0 300 400" aria-hidden="true"><use href="#sprayArt"/></svg>
+    <svg class="spray s-bot" viewBox="0 0 300 400" aria-hidden="true"><use href="#sprayArt"/></svg>
+  </div>
+  <div class="door door-r">
+    <svg class="spray s-top" viewBox="0 0 300 400" aria-hidden="true"><use href="#sprayArt"/></svg>
+    <svg class="spray s-bot" viewBox="0 0 300 400" aria-hidden="true"><use href="#sprayArt"/></svg>
+  </div>
+  <div class="gate-top">Nişan Davetiyesi</div>
+  <svg class="wreath" id="wreath" viewBox="-150 -170 300 340" aria-hidden="true"></svg>
+  <button class="seal" id="seal" aria-label="Davetiyeyi aç"><span>F&amp;B</span></button>
+  <button class="open-btn" id="openBtn">Davetiyeyi Aç</button>
+</div>
+
+<main class="inv" id="inv">
+  <svg class="corner l" viewBox="0 0 300 400" aria-hidden="true"><use href="#sprayArt"/></svg>
+  <svg class="corner r" viewBox="0 0 300 400" aria-hidden="true"><use href="#sprayArt"/></svg>
+
+  <section class="hero reveal">
+    <p class="eyebrow">Nişan Töreni</p>
+    <svg class="sprig" viewBox="0 0 300 60" aria-hidden="true"><use href="#sprigArt"/></svg>
+    <h1 class="names"><span>Fatma Nur</span><span class="amp">&amp;</span><span>Burak Han</span></h1>
+  </section>
+
+  <figure class="photo reveal">
+    <div class="arch-frame"><div class="arch"><img src="foto.jpg" alt="Fatma Nur ile Burak Han kol kola; yüzükleri ve isimlerinin yazdığı kurdele görünüyor" loading="eager"></div></div>
+    <figcaption>ve “evet” dedik…</figcaption>
+    <p class="lead">Bir ömür sürecek yolculuğumuzun ilk adımını atıyoruz. Bu mutlu günümüzde sizleri de aramızda görmekten onur duyarız.</p>
+  </figure>
+
+  <section class="reveal" aria-label="Tarih ve saat">
+    <div class="date">
+      <div class="side">Cumartesi</div>
+      <div class="day">28</div>
+      <div class="side">Saat 20.00</div>
+    </div>
+  </section>
+  <p class="date-sub reveal">Kasım 2026</p>
+
+  <section class="count reveal" aria-label="Geri sayım">
+    <p class="eyebrow" id="countLabel">Büyük güne kalan</p>
+    <div class="grid">
+      <div class="cell"><b id="cd-d">00</b><small>Gün</small></div>
+      <div class="cell"><b id="cd-h">00</b><small>Saat</small></div>
+      <div class="cell"><b id="cd-m">00</b><small>Dakika</small></div>
+      <div class="cell"><b id="cd-s">00</b><small>Saniye</small></div>
+    </div>
+  </section>
+
+  <section class="venue reveal">
+    <p class="eyebrow">Mekân</p>
+    <svg class="sprig" viewBox="0 0 300 60" aria-hidden="true"><use href="#sprigArt"/></svg>
+    <h2>RAINA Davet Düğün Salonu</h2>
+    <p>Sizi bu akşam burada bekliyoruz.</p>
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=RAINA+Davet+D%C3%BC%C4%9F%C3%BCn+Salonu" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+      Yol Tarifi Al
+    </a>
+  </section>
+
+  <section class="family reveal">
+    <p class="eyebrow">Davet Eden</p>
+    <div class="fam">Sağdıç &amp; Tokgöz Aileleri</div>
+    <p class="note">Katılımınız ve güzel dilekleriniz bu günü bizim için daha da anlamlı kılacak.</p>
+    <svg class="sprig" viewBox="0 0 300 60" aria-hidden="true"><use href="#sprigArt"/></svg>
+    <p class="end">Sevgiyle</p>
+  </section>
+</main>
+
+<button class="music" id="music" aria-pressed="false" aria-label="Müziği aç/kapat" hidden>
+  <svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>
+  <svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/><path d="M3 3l18 18"/></svg>
+</button>
+
+<script src="engine.js"></script>
+<script src="gyps.js"></script>
+<script>
+/* ---------- botanical ornaments (olive branches) ---------- */
+(function(){
+  function rng(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+  function branch(p0,p1,p2,n,size,r,col){
+    let s=`<path d="M${p0} Q${p1} ${p2}" fill="none" stroke="${col.stem}" stroke-width="${size/9}" stroke-linecap="round"/>`;
+    const q=(t,i)=>(1-t)*(1-t)*p0[i]+2*(1-t)*t*p1[i]+t*t*p2[i];
+    const d=(t,i)=>2*(1-t)*(p1[i]-p0[i])+2*t*(p2[i]-p1[i]);
+    for(let k=1;k<=n;k++){
+      const t=0.06+0.9*k/(n+1), x=q(t,0), y=q(t,1);
+      const ang=Math.atan2(d(t,1),d(t,0))*180/Math.PI;
+      const side=k%2?1:-1, la=ang+side*(34+r()*16);
+      const L=size*(1.15-t*0.5)+r()*size*0.2, w=L*0.27;
+      s+=`<g transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${la.toFixed(1)})"><path d="M0 0Q${L/2} ${-w} ${L} 0Q${L/2} ${w} 0 0Z" fill="${col.leaf}"/><path d="M1 0H${(L*0.85).toFixed(1)}" stroke="${col.vein}" stroke-width=".7"/></g>`;
+      if(k%3===0){const oa=(ang-side*70)*Math.PI/180,ox=x+Math.cos(oa)*size*0.45,oy=y+Math.sin(oa)*size*0.45;
+        s+=`<ellipse cx="${ox.toFixed(1)}" cy="${oy.toFixed(1)}" rx="${(size*0.2).toFixed(1)}" ry="${(size*0.28).toFixed(1)}" transform="rotate(${(ang).toFixed(0)} ${ox.toFixed(1)} ${oy.toFixed(1)})" fill="${col.olive}"/>`;}
+    }
+    const ta=Math.atan2(d(1,1),d(1,0))*180/Math.PI,L=size*0.7,w=L*0.27;
+    s+=`<g transform="translate(${p2[0]} ${p2[1]}) rotate(${ta.toFixed(1)})"><path d="M0 0Q${L/2} ${-w} ${L} 0Q${L/2} ${w} 0 0Z" fill="${col.leaf}"/></g>`;
+    return s;
+  }
+  const embossed={stem:"#D3C59F",leaf:"#DED1AE",vein:"#C7B78E",olive:"#CFBF96"};
+  const r=rng(7);
+  const spray=
+    branch([8,396],[30,210],[175,52],16,28,r,embossed)+
+    branch([8,396],[150,340],[278,236],12,26,r,embossed)+
+    branch([60,300],[130,250],[150,150],7,21,r,embossed)+
+    branch([8,396],[90,380],[200,390],6,18,r,embossed);
+  document.getElementById('sprayArt').innerHTML=spray;
+  document.getElementById('wreath').innerHTML=gypsWreath(21);
+  const r2=rng(11), khaki={stem:"#8D8862",leaf:"#9C9772",vein:"#7F7A55",olive:"#6F6B45"};
+  document.getElementById('sprigArt').innerHTML=
+    branch([150,32],[105,22],[18,34],7,15,r2,khaki)+branch([150,32],[195,22],[282,34],7,15,r2,khaki)+
+    '<circle cx="150" cy="32" r="3" fill="#B39C68"/>';
+})();
+
+/* ---------- countdown ---------- */
+(function(){
+  const target=new Date('2026-11-28T20:00:00+03:00').getTime();
+  const el=id=>document.getElementById(id), pad=n=>String(n).padStart(2,'0');
+  function tick(){
+    let ms=target-Date.now();
+    if(ms<=0){el('countLabel').textContent=ms>-6*3600e3?'Bu akşam, şimdi!':'Bu güzel gün geride kaldı';ms=0}
+    const s=Math.floor(ms/1000);
+    el('cd-d').textContent=pad(Math.floor(s/86400));
+    el('cd-h').textContent=pad(Math.floor(s%86400/3600));
+    el('cd-m').textContent=pad(Math.floor(s%3600/60));
+    el('cd-s').textContent=pad(s%60);
+  }
+  tick();setInterval(tick,1000);
+})();
+
+/* ---------- opening ---------- */
+const TRACK='kanon';
+(function(){
+  const gate=document.getElementById('gate'),music=document.getElementById('music');
+  document.body.classList.add('locked','pre');
+  let opened=false;
+  function open(){
+    if(opened)return;opened=true;
+    gate.classList.add('open');
+    const on=Engine.play(TRACK);
+    music.hidden=false;music.setAttribute('aria-pressed',on?'true':'false');
+    const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    setTimeout(()=>document.body.classList.remove('pre'),reduce?0:900);
+    setTimeout(()=>{gate.classList.add('gone');document.body.classList.remove('locked')},reduce?50:2200);
+  }
+  gate.addEventListener('click',open);
+  gate.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
+  music.addEventListener('click',()=>{
+    if(Engine.current){Engine.stop();music.setAttribute('aria-pressed','false')}
+    else{music.setAttribute('aria-pressed',Engine.play(TRACK)?'true':'false')}
+  });
+})();
+</script>
+
+</body>
+</html>
