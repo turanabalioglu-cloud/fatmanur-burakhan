@@ -17,7 +17,7 @@
 <meta name="description" content="Fatma Nur & Burak Han nişan davetiyesi · 28 Kasım 2026 · RAINA Davet Düğün Salonu">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Pinyon+Script&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Pinyon+Script&display=swap">
 <style>
 /* Layout: a gate of two embossed cream doors sealed with khaki wax; opening reveals one narrow, centred letterpress column. Single deliberate light look. */
 :root{
@@ -94,6 +94,24 @@ body{background:var(--krem);color:var(--haki-deep);font-family:var(--f-serif);fo
 .gate.open .door-r{transform:rotateY(104deg);filter:brightness(.92)}
 .gate.gone{visibility:hidden;pointer-events:none}
 
+
+/* ---------- photo cover (save-the-date) ---------- */
+.gate .door{background:#2B2A22}
+.gate .door::before,.gate .door::after{display:none}
+.cover{position:absolute;top:0;bottom:0;width:200%}
+.door-l .cover{left:0}.door-r .cover{right:0}
+.cover img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:50% 52%;filter:saturate(.85)}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,20,12,.55),rgba(22,20,12,.12) 30%,rgba(22,20,12,.18) 62%,rgba(22,20,12,.7))}
+.ov{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;color:#FFFDF7;
+  padding-block:calc(9vh + env(safe-area-inset-top,0px)) calc(19vh + env(safe-area-inset-bottom,0px))}
+.ov-txt{margin:0;font:500 12px/2.1 var(--f-serif);letter-spacing:.42em;text-transform:uppercase;text-shadow:0 1px 8px rgba(0,0,0,.35);padding-left:.42em}
+.ov-mid{display:flex;flex-direction:column;align-items:center;gap:16px}
+.rule{display:block;width:1px;height:clamp(36px,7vh,70px);background:rgba(255,253,247,.85)}
+.ov-date{display:flex;flex-direction:column;align-items:center;font-family:var(--f-serif);font-weight:300;line-height:.92;font-size:clamp(66px,20vw,112px);letter-spacing:.02em;text-shadow:0 2px 18px rgba(0,0,0,.3);font-variant-numeric:lining-nums}
+.ov-date span:nth-child(2){text-transform:uppercase;font-size:.82em;letter-spacing:.04em}
+.gate .open-btn{color:#FFFDF7;background:rgba(255,253,247,.12);border-color:rgba(255,253,247,.75);bottom:calc(7vh + env(safe-area-inset-bottom,0px));
+  animation:breatheW 2.8s ease-in-out infinite}
+@keyframes breatheW{0%,100%{box-shadow:0 0 0 0 rgba(255,253,247,.35)}50%{box-shadow:0 0 0 9px rgba(255,253,247,0)}}
 /* ---------- invitation ---------- */
 body.locked{overflow:hidden}
 .inv{position:relative;max-width:540px;margin:0 auto;text-align:center;
@@ -179,17 +197,18 @@ body.pre .reveal:nth-child(2){transition-delay:.15s}
 </svg>
 
 <div class="gate" id="gate" role="dialog" aria-label="Davetiye kapağı">
-  <div class="door door-l">
-    <svg class="spray s-top" viewBox="0 0 300 400" aria-hidden="true"><use href="#sprayArt"/></svg>
-    <svg class="spray s-bot" viewBox="0 0 300 400" aria-hidden="true"><use href="#sprayArt"/></svg>
-  </div>
-  <div class="door door-r">
-    <svg class="spray s-top" viewBox="0 0 300 400" aria-hidden="true"><use href="#sprayArt"/></svg>
-    <svg class="spray s-bot" viewBox="0 0 300 400" aria-hidden="true"><use href="#sprayArt"/></svg>
-  </div>
-  <div class="gate-top">Nişan Davetiyesi</div>
-  <svg class="wreath" id="wreath" viewBox="-150 -170 300 340" aria-hidden="true"></svg>
-  <button class="seal" id="seal" aria-label="Davetiyeyi aç"><span>F&amp;B</span></button>
+  <div class="door door-l"><div class="cover"><img src="foto.jpg" alt=""><div class="shade"></div>
+      <div class="ov">
+        <p class="ov-txt">Nişan Töreni<br>Fatma Nur &amp; Burak Han</p>
+        <div class="ov-mid"><i class="rule"></i><div class="ov-date"><span>28</span><span>Kasım</span><span>26</span></div><i class="rule"></i></div>
+        <p class="ov-txt">RAINA Davet<br>Düğün Salonu</p>
+      </div></div></div>
+  <div class="door door-r" aria-hidden="true"><div class="cover"><img src="foto.jpg" alt=""><div class="shade"></div>
+      <div class="ov">
+        <p class="ov-txt">Nişan Töreni<br>Fatma Nur &amp; Burak Han</p>
+        <div class="ov-mid"><i class="rule"></i><div class="ov-date"><span>28</span><span>Kasım</span><span>26</span></div><i class="rule"></i></div>
+        <p class="ov-txt">RAINA Davet<br>Düğün Salonu</p>
+      </div></div></div>
   <button class="open-btn" id="openBtn">Davetiyeyi Aç</button>
 </div>
 
@@ -284,7 +303,7 @@ body.pre .reveal:nth-child(2){transition-delay:.15s}
     branch([60,300],[130,250],[150,150],7,21,r,embossed)+
     branch([8,396],[90,380],[200,390],6,18,r,embossed);
   document.getElementById('sprayArt').innerHTML=spray;
-  document.getElementById('wreath').innerHTML=gypsWreath(21);
+  const wr=document.getElementById('wreath');if(wr)wr.innerHTML=gypsWreath(21);
   const r2=rng(11), khaki={stem:"#8D8862",leaf:"#9C9772",vein:"#7F7A55",olive:"#6F6B45"};
   document.getElementById('sprigArt').innerHTML=
     branch([150,32],[105,22],[18,34],7,15,r2,khaki)+branch([150,32],[195,22],[282,34],7,15,r2,khaki)+
